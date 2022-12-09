@@ -1,0 +1,513 @@
+<script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.37898" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.37898" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = true;
+	JotForm.newPaymentUI = true;
+
+   JotForm.setConditions([{"action":[{"id":"action_1661195052911","visibility":"ShowMultiple","isError":false,"fields":["13","5","6","8","9","10","14"]}],"id":"1661195074712","index":"0","link":"Any","priority":"0","terms":[{"id":"term_1661195052911","field":"18","operator":"equals","value":"VER TODA LA DOCUMENTACIÓN REQUERIDA","isError":false}],"type":"field"},{"action":[{"id":"action_1661195021476","visibility":"ShowMultiple","isError":false,"fields":["5","6","8"]}],"id":"1661195038864","index":"1","link":"Any","priority":"1","terms":[{"id":"term_1661195021476","field":"18","operator":"equals","value":"PERCEPTOR INGRESO MÍNIMO VITAL","isError":false}],"type":"field"},{"action":[{"id":"action_1661194997005","visibility":"ShowMultiple","isError":false,"fields":["5","6","8","14"]}],"id":"1661195015168","index":"2","link":"Any","priority":"2","terms":[{"id":"term_1661194997005","field":"18","operator":"equals","value":"FAMILIA NUMEROSA","isError":false}],"type":"field"},{"action":[{"id":"action_0_1661764873851","visibility":"ShowMultiple","isError":false,"fields":["5","6","8","9"]}],"id":"1661194980096","index":"3","link":"Any","priority":"3","terms":[{"id":"term_0_1661764873851","field":"18","operator":"equals","value":"PENSIONISTA","isError":false}],"type":"field"},{"action":[{"id":"action_1661194934138","visibility":"ShowMultiple","isError":false,"fields":["13","5","6","8","9","10"]}],"id":"1661194957237","index":"4","link":"Any","priority":"4","terms":[{"id":"term_1661194934138","field":"18","operator":"equals","value":"POR NIVEL DE RENTA CON CIRC. ESPECIALES","isError":false}],"type":"field"},{"action":[{"id":"action_1661194577532","visibility":"ShowMultiple","isError":false,"fields":["13","5","6","8","9","12"]}],"id":"1661194600479","index":"5","link":"Any","priority":"5","terms":[{"id":"term_1661194577532","field":"18","operator":"equals","value":"POR NIVEL DE RENTA","isError":false}],"type":"field"}]);	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+
+	JotForm.init(function(){
+	/*INIT-START*/
+      JotForm.alterTexts({"ageVerificationError":"Debe ser mayor de {minAge} años para enviar este formulario.","alphabetic":"Este campo solo puede contener letras.","alphanumeric":"Este campo solo puede contener letras y números.","appointmentSelected":"Ha seleccionado {time} del {date}","ccDonationMinLimitError":"La Cantidad Mínima es {minAmount} {currency}","ccInvalidCVC":"El número CVC no es válido.","ccInvalidExpireDate":"La fecha de expiración no es válida","ccInvalidNumber":"El número de su tarjeta de crédito no es válido.","ccMissingDetails":"Please fill up the credit card details.","ccMissingDonation":"Favor ponga valores númericos en la cantidad a donar.","ccMissingProduct":"Por favor seleccione al menos un producto.","characterLimitError":"Demasiados caracteres. El límite es","characterMinLimitError":"Muy pocos caracteres. El mínimum es","confirmClearForm":"¿Está seguro que desea limpiar el formulario?","confirmEmail":"El correo electrónico no coincide","currency":"Este campo sólo puede contener valores de moneda.","cyrillic":"Este campo solo puede contener caracteres cirílicos.","dateInvalid":"Esta fecha no es valida. El formato de fecha es {format}","dateInvalidSeparate":"Esta fecha no es válida. Ponga una {element} válida","dateLimited":"Esta fecha no está disponible.","disallowDecimals":"Por favor, introduzca un número entero.","dragAndDropFilesHere_infoMessage":"Arrastre y suelte archivos aquí","email":"Introduzca una dirección e-mail válida","fillMask":"El valor de este campo debe llenar la mascara","freeEmailError":"No se permiten cuentas de correo gratuitas","generalError":"Existen errores en el formulario, por favor corríjalos antes de continuar.","generalPageError":"Hay errores en esta página. Por favor, corríjalos antes de continuar.","gradingScoreError":"El puntaje total debería ser sólo &amp;quot;menos que&amp;quot; o &amp;quot;igual que&amp;quot;","incompleteFields":"Existen campos requeridos incompletos. Por favor complételos.","inputCarretErrorA":"La entrada no debe ser inferior al valor mínimo:","inputCarretErrorB":"La entrada debe ser menor al valor:","justSoldOut":"Se acaba de agotar","lessThan":"Su puntuación debería ser menor o igual que","maxDigitsError":"El máximo de dígitos permitido es","maxFileSize_infoMessage":"Tamaño de Archivo Máx.","maxSelectionsError":"The maximum number of selections allowed is ","minSelectionsError":"El número mínimo de opciones obligatorias es","multipleFileUploads_emptyError":"El fichero {file} está vacío; por favor, seleccione de nuevo los ficheros sin él.","multipleFileUploads_fileLimitError":"Solo {fileLimit} carga de archivos permitida.","multipleFileUploads_minSizeError":"{file} is demasiado pequeño, el tamaño mínimo de fichero es: {minSizeLimit}.","multipleFileUploads_onLeave":"Se están cargando los ficheros, si cierras ahora, se cancelará dicha carga.","multipleFileUploads_sizeError":"{file} es demasiado grande; el tamaño del archivo no debe superar los {sizeLimit}.","multipleFileUploads_typeError":"El fichero {file} posee una extensión no permitida. Sólo están permitidas las extensiones {extensions}.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","noSlotsAvailable":"No hay cupos disponibles","notEnoughStock":"No hay suficientes existencias para la selección actual","notEnoughStock_remainedItems":"No hay suficientes existencias para la selección actual (quedan {count} artículos)","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","numeric":"Este campo sólo admite valores numéricos.","pastDatesDisallowed":"La fecha debe ser futura","pleaseWait":"Por favor, espere ...","required":"Este campo es obligatorio.","requireEveryCell":"Se requieren todas las celdas.","requireEveryRow":"Todas las filas son obligatorias.","requireOne":"Al menos un campo requerido.","restrictedDomain":"This domain is not allowed","selectionSoldOut":"Selección agotada","slotUnavailable":"{time} del {date} ha sido tomada. Favor seleccionar otro espacio.","soldOut":"Agotado","subProductItemsLeft":"(quedan {count} productos)","uploadExtensions":"Solo puede subir los siguientes archivos:","uploadFilesize":"Tamaño del archivo no puede ser mayor que:","uploadFilesizemin":"Tamañao de archivo no puede ser menos de:","url":"Este campo solo contiene una URL válida.","validateEmail":"You need to validate this e-mail","wordLimitError":"Demasiadas palabras. El límite es","wordMinLimitError":"Muy pocas palabras. El mínimo es"});
+	/*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"heading","qid":"1","text":"documentacion requerida para la                               solicitud del BONO SOCIAL  electrico.","type":"control_head"},null,null,null,{"name":"input5","qid":"5","text":"       Modelo de solicitud del bono social. El modelo de solicitud esta disponible en esta web en el apartado bono social\u002F descarga modelo y en este enlace: https:\u002F\u002Fpuntoatencion.com\u002Fassets\u002Ffiles\u002Fsolicitud-bono-social_pa_4.pdf.              Puede solicitarlo tambien en nuestros puntos de atencion.                                                                                                                                                                                                                Si tramita la solicitud en nuestras oficinas la solicitud  se genera y adjunta junto con el resto de documentacion.","type":"control_text"},{"name":"ltpgtfotocopiaDel","qid":"6","text":"    Fotocopia del NIF o NIE del titular y de todos los miembros de la unidad de convivencia (incluidos los mayores de 14 anos con capacidad de obrar y los menores de 14 anos que dispongan de el). \n   ","type":"control_text"},null,{"name":"ltpgtampndashParejas","qid":"8","text":" Certificado de empadronamiento, en vigor del titular y de todos los miembros de la unidad de convivencia.","type":"control_text"},{"name":"ltpgtampndashCertificado","qid":"9","text":"  En el caso de que forme parte de una unidad de convivencia, libro\u002Fs de familia y\u002Fo certificado\u002Fs de nacimiento y\u002Fo certificado\u002Fs de matrimonio y\u002Fo certificacion de la inscripcion como pareja de hecho o documento publico en el que conste la constitucion de dicha pareja. Cuando proceda, resolucion judicial o administrativa que acredite el acogimiento.\n  En caso de no formar parte de una unidad de convivencia, hoja individual del Registro Civil o cualquier documento expedido por la autoridad competente que acredite el estado civil del solicitante. Por ejemplo una fe de vida indicando el estado civil\n  En caso de que la unidad de convivenvia esta integrada por un unico progenitor y, al menos, un menor, libro de familia y certificado de empadronamiento\n *En caso de no disponer de libro de familia, declaracion responsable relativa al estado civil del solicitante, de conformidad con el modelo que figura como anexo III de la Orden ETU\u002F943\u002F2017.\n ","type":"control_text"},{"name":"ltpgtampndashFamilia","qid":"10","text":" \n  Certificado u otro documento acreditativo. Circunstancias especiales. Si algun miembro de la unidad de convivenvia tiene una discapacidad reconocida igual o superior al 33%, es victima de violencia de genero, victima de terrorismo o encuentra en situacion de dependencia reconocida de grado II o III  que debe obtener del organo competente en servicios sociales, segun se indica en la cuestion siguiente.","type":"control_text"},null,null,null,{"name":"ltpgtampnbspampnbspltstronggttampiacutetulo","qid":"14","text":"   Titulo de familia numerosa en vigor .En el caso de las familias numerosas, copia del titulo de familia numerosa en vigor.\n \n ","type":"control_text"},null,null,{"name":"documentacionRequerida","qid":"17","text":"documentacion requerida ","type":"control_head"},{"description":"","name":"motivoDe","qid":"18","subLabel":"","text":"MOTIVO DE LA SOLICITUD ","type":"control_dropdown"},null,null,null,null,{"name":"divisor23","qid":"23","text":"Divisor","type":"control_divider"},null,null,null,null,{"name":"input28","qid":"28","text":"nuestros puntos de atencion :\npunto de atencion IBERDROLA Requena: elec. Clemente c\u002F el Peso 2 tel. 960806487\npunto de atencion IBERDROLA Utiel: elec. Clemente plza. Miguel Ballesteros 1  tel. 962170233\n                                                                                                                                                                                           www.puntoatencion.com\ncontacto@puntoatencion.com \n                                                                                                                 ","type":"control_text"},null,null,null,{"name":"enviar","qid":"32","text":"REFRESCAR","type":"control_button"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"documentacion requerida para la                               solicitud del BONO SOCIAL  electrico.","type":"control_head"},null,null,null,{"name":"input5","qid":"5","text":"       Modelo de solicitud del bono social. El modelo de solicitud esta disponible en esta web en el apartado bono social\u002F descarga modelo y en este enlace: https:\u002F\u002Fpuntoatencion.com\u002Fassets\u002Ffiles\u002Fsolicitud-bono-social_pa_4.pdf.              Puede solicitarlo tambien en nuestros puntos de atencion.                                                                                                                                                                                                                Si tramita la solicitud en nuestras oficinas la solicitud  se genera y adjunta junto con el resto de documentacion.","type":"control_text"},{"name":"ltpgtfotocopiaDel","qid":"6","text":"    Fotocopia del NIF o NIE del titular y de todos los miembros de la unidad de convivencia (incluidos los mayores de 14 anos con capacidad de obrar y los menores de 14 anos que dispongan de el). \n   ","type":"control_text"},null,{"name":"ltpgtampndashParejas","qid":"8","text":" Certificado de empadronamiento, en vigor del titular y de todos los miembros de la unidad de convivencia.","type":"control_text"},{"name":"ltpgtampndashCertificado","qid":"9","text":"  En el caso de que forme parte de una unidad de convivencia, libro\u002Fs de familia y\u002Fo certificado\u002Fs de nacimiento y\u002Fo certificado\u002Fs de matrimonio y\u002Fo certificacion de la inscripcion como pareja de hecho o documento publico en el que conste la constitucion de dicha pareja. Cuando proceda, resolucion judicial o administrativa que acredite el acogimiento.\n  En caso de no formar parte de una unidad de convivencia, hoja individual del Registro Civil o cualquier documento expedido por la autoridad competente que acredite el estado civil del solicitante. Por ejemplo una fe de vida indicando el estado civil\n  En caso de que la unidad de convivenvia esta integrada por un unico progenitor y, al menos, un menor, libro de familia y certificado de empadronamiento\n *En caso de no disponer de libro de familia, declaracion responsable relativa al estado civil del solicitante, de conformidad con el modelo que figura como anexo III de la Orden ETU\u002F943\u002F2017.\n ","type":"control_text"},{"name":"ltpgtampndashFamilia","qid":"10","text":" \n  Certificado u otro documento acreditativo. Circunstancias especiales. Si algun miembro de la unidad de convivenvia tiene una discapacidad reconocida igual o superior al 33%, es victima de violencia de genero, victima de terrorismo o encuentra en situacion de dependencia reconocida de grado II o III  que debe obtener del organo competente en servicios sociales, segun se indica en la cuestion siguiente.","type":"control_text"},null,null,null,{"name":"ltpgtampnbspampnbspltstronggttampiacutetulo","qid":"14","text":"   Titulo de familia numerosa en vigor .En el caso de las familias numerosas, copia del titulo de familia numerosa en vigor.\n \n ","type":"control_text"},null,null,{"name":"documentacionRequerida","qid":"17","text":"documentacion requerida ","type":"control_head"},{"description":"","name":"motivoDe","qid":"18","subLabel":"","text":"MOTIVO DE LA SOLICITUD ","type":"control_dropdown"},null,null,null,null,{"name":"divisor23","qid":"23","text":"Divisor","type":"control_divider"},null,null,null,null,{"name":"input28","qid":"28","text":"nuestros puntos de atencion :\npunto de atencion IBERDROLA Requena: elec. Clemente c\u002F el Peso 2 tel. 960806487\npunto de atencion IBERDROLA Utiel: elec. Clemente plza. Miguel Ballesteros 1  tel. 962170233\n                                                                                                                                                                                           www.puntoatencion.com\ncontacto@puntoatencion.com \n                                                                                                                 ","type":"control_text"},null,null,null,{"name":"enviar","qid":"32","text":"REFRESCAR","type":"control_button"}]);}, 20); 
+</script>
+<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f7ed99c2c2c7240ba580251"/>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.37898" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.37898" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+.form-all {
+  font-family: "Inter", sans-serif;
+}
+.main .jotform-form {
+  width: 100%;
+  padding: 0 3%;
+}
+.form-all {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 752px;
+}
+.form-line-active {
+  background-color: #ffffe0;
+}
+.form-all {
+  font-size: 16px;
+}
+li.form-line {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.form-line {
+  padding: 12px 10px;
+}
+.supernova .form-all,
+.form-all {
+  border-radius: 20px;
+}
+.form-section:first-child {
+  border-radius: 20px 20px 0 0;
+}
+.form-section:last-child {
+  border-radius: 0 0 20px 20px;
+}
+.form-line,
+.form-input,
+.form-input-wide,
+.form-dropdown,
+.form-sub-label-container,
+.form-matrix-table {
+  width: 100%;
+  max-width: none;
+}
+.form-textbox,
+.form-textarea,
+.form-radio-item,
+.form-checkbox-item,
+.form-captcha input,
+.form-spinner input,
+.form-error-message {
+  width: 100%;
+  max-width: none;
+}
+.form-section {
+  padding: 0px 38px;
+}
+.form-textbox,
+.form-textarea,
+.form-radio-other-input,
+.form-checkbox-other-input,
+.form-captcha input,
+.form-spinner input {
+  background-color: #ffffff;
+}
+li[data-type="control_textbox"] div[data-layout="half"],
+li[data-type="control_dropdown"] div[data-layout="half"],
+li[data-type="control_email"] div[data-layout="half"],
+li[data-type="control_number"] div[data-layout="half"],
+li[data-type="control_phone"] div[data-layout="half"],
+li[data-type="control_datetime"] div[data-layout="half"],
+li[data-type="control_signature"] div[data-layout="half"] {
+  width: 100% !important;
+  max-width: 1000px;
+}
+.form-label {
+  font-family: "Inter", sans-serif;
+}
+.form-line-column {
+  width: calc(50% - 8px);
+}
+.form-dropdown:first-child {
+  color: #417505;
+}
+[data-type="control_dropdown"] .form-input,
+[data-type="control_birthdate"] .form-input,
+[data-type="control_time"] .form-input,
+[data-type="control_dropdown"] .form-input-wide,
+[data-type="control_birthdate"] .form-input-wide,
+[data-type="control_time"] .form-input-wide {
+  width: 100% !important;
+  max-width: 500px;
+}
+[data-type="control_dropdown"] .form-dropdown {
+  width: 100% !important;
+  max-width: 500px;
+}
+.form-checkbox-item label,
+.form-checkbox-item span,
+.form-radio-item label,
+.form-radio-item span {
+  color: #5ca607;
+}
+.form-radio-item,
+.form-checkbox-item {
+  padding-bottom: 0px !important;
+}
+.form-radio-item:last-child,
+.form-checkbox-item:last-child {
+  padding-bottom: 0;
+}
+.form-single-column .form-checkbox-item,
+.form-single-column .form-radio-item {
+  width: 100%;
+}
+.form-checkbox-item .editor-container div,
+.form-radio-item .editor-container div {
+  position: relative;
+}
+.form-checkbox-item .editor-container div:before,
+.form-radio-item .editor-container div:before {
+  display: inline-block;
+  vertical-align: middle;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.submit-button {
+  font-size: 16px;
+  font-weight: normal;
+  width: 100px;
+  font-family: "Inter", sans-serif;
+  border-color: #f6f4f6;
+}
+.submit-button {
+  min-width: 180px;
+}
+.form-submit-button:not(.form-sacl-button) {
+  color: #f6f4f6;
+  background: #417505;
+  box-shadow: none;
+  text-shadow: none;
+}
+.form-all .form-pagebreak-back,
+.form-all .form-pagebreak-next {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+.form-all .form-pagebreak-back,
+.form-all .form-pagebreak-next {
+  min-width: 128px;
+}
+li[data-type="control_image"] div {
+  text-align: left;
+}
+li[data-type="control_image"] img {
+  border: none;
+  border-width: 0px !important;
+  border-style: solid !important;
+  border-color: false !important;
+}
+.supernova {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-repeat: repeat;
+}
+.supernova {
+  background-image: none;
+}
+#stage {
+  background-image: none;
+}
+/* | */
+.form-all {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-repeat: repeat;
+}
+.form-header-group {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+}
+.header-large h1.form-header {
+  font-size: 2em;
+}
+.header-large h2.form-header {
+  font-size: 1.5em;
+}
+.header-large h3.form-header {
+  font-size: 1.17em;
+}
+.header-large h1 + .form-subHeader {
+  font-size: 1em;
+}
+.header-large h2 + .form-subHeader {
+  font-size: .875em;
+}
+.header-large h3 + .form-subHeader {
+  font-size: .75em;
+}
+.header-default h1.form-header {
+  font-size: 2em;
+}
+.header-default h2.form-header {
+  font-size: 1.5em;
+}
+.header-default h3.form-header {
+  font-size: 1.17em;
+}
+.header-default h1 + .form-subHeader {
+  font-size: 1em;
+}
+.header-default h2 + .form-subHeader {
+  font-size: .875em;
+}
+.header-default h3 + .form-subHeader {
+  font-size: .75em;
+}
+.header-small h1.form-header {
+  font-size: 2em;
+}
+.header-small h2.form-header {
+  font-size: 1.5em;
+}
+.header-small h3.form-header {
+  font-size: 1.17em;
+}
+.header-small h1 + .form-subHeader {
+  font-size: 1em;
+}
+.header-small h2 + .form-subHeader {
+  font-size: .875em;
+}
+.header-small h3 + .form-subHeader {
+  font-size: .75em;
+}
+.form-header-group {
+  text-align: left;
+}
+.form-header-group {
+  font-family: "Inter", sans-serif;
+}
+div.form-header-group.header-large,
+div.form-header-group.hasImage {
+  margin: 0px -38px;
+}
+div.form-header-group.header-large,
+div.form-header-group.hasImage {
+  padding: 40px 52px;
+}
+.form-header-group .form-header,
+.form-header-group .form-subHeader {
+  color: #417505;
+}
+.form-line-error {
+  overflow: hidden;
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -ms-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: #fff4f4;
+}
+.form-line-error .form-error-message {
+  background-color: #f23a3c;
+  clear: both;
+  float: none;
+}
+.form-line-error .form-error-message .form-error-arrow {
+  border-bottom-color: #f23a3c;
+}
+.form-line-error input:not(#coupon-input),
+.form-line-error textarea,
+.form-line-error .form-validation-error {
+  border: 1px solid #f23a3c;
+  box-shadow: 0 0 3px #f23a3c;
+}
+.supernova {
+  background-color: #f6f4f6;
+  background-color: rgba(0, 0, 0, 0);
+}
+.supernova body {
+  background-color: transparent;
+}
+.supernova .form-all,
+.form-all {
+  background-color: #f6f4f6;
+}
+.form-textbox,
+.form-textarea,
+.form-radio-other-input,
+.form-checkbox-other-input,
+.form-captcha input,
+.form-spinner input {
+  background-color: #ffffff;
+}
+.form-matrix-table tr {
+  border-color: #dfd8df;
+}
+.form-matrix-table tr:nth-child(2n) {
+  background-color: #ebe6eb;
+}
+.form-all {
+  color: #417505;
+}
+.form-label-top,
+.form-label-left,
+.form-label-right,
+.form-html {
+  color: #417505;
+}
+.form-line-error {
+  overflow: hidden;
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -ms-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: #fff4f4;
+}
+
+/*__INSPECT_SEPERATOR__*/
+
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" action="https://submit.jotformeu.com/submit/221032388303042/" method="post" name="form_221032388303042" id="221032388303042" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="221032388303042" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <style>
+      .form-all:before
+      {
+        background: none;
+      }
+    </style>
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div style="display:table;width:100%">
+          <div class="form-header-group hasImage header-small" data-imagealign="Left">
+            <div class="header-logo"><img src="https://www.jotform.com/uploads/mcc6589/form_files/logo%20pa.%20descargado%20de%20whatsapp.6303d949295843.64836242.jpg" alt="" width="150" class="header-logo-left" /></div>
+            <div class="header-text httal htvam">
+              <h3 id="header_1" class="form-header" data-component="header">documentación requerida para la solicitud del BONO SOCIAL eléctrico.</h3>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line fixed-width" data-type="control_dropdown" id="id_18"><label class="form-label form-label-top form-label-auto" id="label_18" for="input_18"> MOTIVO DE LA SOLICITUD </label>
+        <div id="cid_18" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_18" name="q18_motivoDe" style="width:700px" data-component="dropdown">
+            <option value="">Please Select</option>
+            <option value="POR NIVEL DE RENTA">POR NIVEL DE RENTA</option>
+            <option value="POR NIVEL DE RENTA CON CIRC. ESPECIALES">POR NIVEL DE RENTA CON CIRC. ESPECIALES</option>
+            <option value="PENSIONISTA">PENSIONISTA</option>
+            <option value="FAMILIA NUMEROSA">FAMILIA NUMEROSA</option>
+            <option value="PERCEPTOR INGRESO MÍNIMO VITAL">PERCEPTOR INGRESO MÍNIMO VITAL</option>
+            <option value="VER TODA LA DOCUMENTACIÓN REQUERIDA">VER TODA LA DOCUMENTACIÓN REQUERIDA</option>
+          </select> </div>
+      </li>
+      <li id="cid_17" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-small">
+          <div class="header-text httal htvam">
+            <h3 id="header_17" class="form-header" data-component="header">documentación requerida </h3>
+          </div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_text" id="id_5">
+        <div id="cid_5" class="form-input-wide always-hidden" data-layout="full">
+          <div id="text_5" class="form-html" data-component="text" tabindex="0">
+            <p>       <strong>Modelo de solicitud del bono social.</strong> El modelo de solicitud está disponible en esta web en el apartado bono social/ descarga modelo y en este enlace: <a href="https://puntoatencion.com/assets/files/solicitud-bono-social_pa_4.pdf" rel="nofollow">https://puntoatencion.com/assets/files/solicitud-bono-social_pa_4.pdf</a>.              Puede solicitarlo también en nuestros puntos de atención.                                                                                                                                                                                                                Si tramita la solicitud en nuestras oficinas la solicitud  se genera y adjunta junto con el resto de documentación.</p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_text" id="id_6">
+        <div id="cid_6" class="form-input-wide always-hidden" data-layout="full">
+          <div id="text_6" class="form-html" data-component="text" tabindex="0">
+            <p>    <strong>Fotocopia del NIF o NIE</strong> del titular y de todos los miembros de la unidad de convivencia (incluidos los mayores de 14 años con capacidad de obrar y los menores de 14 años que dispongan de él). </p>
+            <p>   </p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_text" id="id_8">
+        <div id="cid_8" class="form-input-wide always-hidden" data-layout="full">
+          <div id="text_8" class="form-html" data-component="text" tabindex="0">
+            <p> <strong>Certificado de empadronamiento</strong>, en vigor del titular y de todos los miembros de la unidad de convivencia.</p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_text" id="id_9">
+        <div id="cid_9" class="form-input-wide always-hidden" data-layout="full">
+          <div id="text_9" class="form-html" data-component="text" tabindex="0">
+            <p>  <strong>En el caso de que forme parte de una unidad de convivencia</strong>, libro/s de familia y/o certificado/s de nacimiento y/o certificado/s de matrimonio y/o certificación de la inscripción como pareja de hecho o documento público en el que conste la constitución de dicha pareja. Cuando proceda, resolución judicial o administrativa que acredite el acogimiento.</p>
+            <p> <strong> En caso de no formar parte de una unidad de convivencia</strong>, hoja individual del Registro Civil o cualquier documento expedido por la autoridad competente que acredite el estado civil del solicitante. Por ejemplo una fe de vida indicando el estado civil</p>
+            <p>  <strong>En caso de que la unidad de convivenvia está integrada por un único progenitor y, al menos, un menor,</strong> libro de familia y certificado de empadronamiento</p>
+            <p> <strong>*En caso de no disponer de libro de familia,</strong> declaración responsable relativa al estado civil del solicitante, de conformidad con el modelo que figura como anexo III de la Orden ETU/943/2017.</p>
+            <p> </p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_text" id="id_10">
+        <div id="cid_10" class="form-input-wide always-hidden" data-layout="full">
+          <div id="text_10" class="form-html" data-component="text" tabindex="0">
+            <p> </p>
+            <p>  <strong>Certificado u otro documento acreditativo. Circunstancias especiales.</strong> Si algún miembro de la unidad de convivenvia tiene una discapacidad reconocida igual o superior al 33%, es víctima de violencia de género, víctima de terrorismo o encuentra en situación de dependencia reconocida de grado II o III  que debe obtener del órgano competente en servicios sociales, según se indica en la cuestión siguiente.</p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_text" id="id_14">
+        <div id="cid_14" class="form-input-wide always-hidden" data-layout="full">
+          <div id="text_14" class="form-html" data-component="text" tabindex="0">
+            <p>   <strong>Título de familia numerosa en vigor</strong> .En el caso de las familias numerosas, copia del título de familia numerosa en vigor.</p>
+            <p> </p>
+            <p> </p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_28">
+        <div id="cid_28" class="form-input-wide" data-layout="full">
+          <div id="text_28" class="form-html" data-component="text" tabindex="0">
+            <p><span style="color: #48742b;"><strong>nuestros puntos de atención :</strong></span></p>
+            <p><span style="color: #48742b;"><strong>punto de atención IBERDROLA Requena: elec. Clemente c/ el Peso 2 tel. 960806487</strong></span></p>
+            <p><span style="color: #48742b;"><strong>punto de atención IBERDROLA Utiel: elec. Clemente plza. Miguel Ballesteros 1  tel. 962170233</strong></span></p>
+            <p><strong><span style="color: #48742b;">                              </span>                                                                                                                                                             <span style="text-decoration: underline; color: #f19c39;"><a style="color: #f19c39; text-decoration: underline;" href="http://www.puntoatencion.com" rel="nofollow">www.puntoatencion.com</a></span></strong></p>
+            <p><span style="text-decoration: underline; color: #f19c39;"><strong><a style="color: #f19c39; text-decoration: underline;" href="mailto:contacto@puntoatencion.com " rel="nofollow">contacto@puntoatencion.com </a></strong></span></p>
+            <p><strong>     </strong>                                                                                                            </p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_32">
+        <div id="cid_32" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><span> </span><button id="input_print_32" type="button" class="form-submit-print jf-form-buttons" data-component="button"><img src="https://cdn.jotfor.ms/images/printer.png" style="vertical-align:middle" /><span id="span_print_32" class="span_print"> IMPRIMIR </span></button><button id="input_32" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">REFRESCAR</button></div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_23">
+        <div id="cid_23" class="form-input-wide" data-layout="full">
+          <div class="divider" aria-label="Divisor" data-component="divider" style="border-bottom-width:1px;border-bottom-style:solid;border-color:rgba(0, 0, 0, 0);height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px"></div>
+        </div>
+      </li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+    </ul>
+  </div>
+  <script>
+    JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+    JotForm.poweredByText = "Powered by Jotform";
+  </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="221032388303042" />
+  <script type="text/javascript">
+    var all_spc = document.querySelectorAll("form[id='221032388303042'] .si" + "mple" + "_spc");
+    for (var i = 0; i < all_spc.length; i++)
+    {
+      all_spc[i].value = "221032388303042-221032388303042";
+    }
+  </script>
+
+</form><script type="text/javascript">JotForm.ownerView=true;</script><script type="text/javascript">JotForm.forwardToEu=true;</script><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.37898"></script>
+<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.37898"></script>
